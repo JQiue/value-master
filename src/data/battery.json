@@ -1,0 +1,20 @@
+{
+  "4000": {
+    "performance": 1
+  },
+  "4500": {
+    "performance": 1.1
+  },
+  "4600": {
+    "performance": 1.14
+  },
+  "4700": {
+    "performance": 1.15
+  },
+  "4810": {
+    "performance": 1.17
+  },
+  "5000": {
+    "performance": 1.2
+  }
+}

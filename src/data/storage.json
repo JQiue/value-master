@@ -1,0 +1,17 @@
+{
+  "64": {
+    "performance": 10
+  },
+  "128": {
+    "performance": 20
+  },
+  "256": {
+    "performance": 40
+  },
+  "512": {
+    "performance": 80
+  },
+  "1024": {
+    "performance": 100
+  }
+}

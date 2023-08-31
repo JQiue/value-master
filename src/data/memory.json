@@ -1,0 +1,17 @@
+{
+  "4": {
+    "performance": 16
+  },
+  "8": {
+    "performance": 33
+  },
+  "12": {
+    "performance": 50
+  },
+  "16": {
+    "performance": 66
+  },
+  "24": {
+    "performance": 100
+  }
+}

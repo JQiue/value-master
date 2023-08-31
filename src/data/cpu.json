@@ -1,0 +1,42 @@
+{
+  "骁龙870": {
+    "model": "骁龙870",
+    "ttm": "2021",
+    "performance": 50
+  },
+  "骁龙888": {
+    "model": "骁龙888",
+    "ttm": "2020",
+    "performance": 55
+  },
+  "骁龙888+": {
+    "model": "骁龙888+",
+    "ttm": "2021",
+    "performance": 60
+  },
+  "骁龙7+ Gen2": {
+    "model": "骁龙7+ Gen2",
+    "ttm": "2023",
+    "performance": 55
+  },
+  "骁龙8 Gen1": {
+    "model": "骁龙8 Gen1",
+    "ttm": "2021",
+    "performance": 67.5
+  },
+  "骁龙8+ Gen1": {
+    "model": "骁龙8+ Gen1",
+    "ttm": "2022",
+    "performance": 70
+  },
+  "天玑 9200": {
+    "model": "天玑 9200",
+    "ttm": "2023",
+    "performance": 72.5
+  },
+  "骁龙8 Gen2": {
+    "model": "骁龙8 Gen2",
+    "ttm": "2022",
+    "performance": 75
+  }
+}

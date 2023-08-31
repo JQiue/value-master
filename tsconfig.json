@@ -1,0 +1,12 @@
+{
+  "files": [],
+  "include": ["node_modules/tdesign-vue-next/global.d.ts"],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ]
+}

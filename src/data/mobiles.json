@@ -1,0 +1,79 @@
+[
+  {
+    "model": "iQOO Neo5 活力版",
+    "processor": "骁龙870",
+    "memory": 8,
+    "storage": 128,
+    "battery": 4500,
+    "display": {
+      "dpi": 1080,
+      "hz": 144,
+      "technology": "LCD"
+    },
+    "ttm": "2021年5月",
+    "price": 2299
+  },
+  {
+    "model": "iQOO Neo5 活力版",
+    "processor": "骁龙870",
+    "memory": 8,
+    "storage": 256,
+    "battery": 4500,
+    "ttm": "2021年5月",
+    "price": 2499
+  },
+  {
+    "model": "iQOO Neo6",
+    "processor": "骁龙8 Gen1",
+    "memory": 8,
+    "storage": 128,
+    "battery": 4700,
+    "ttm": "2022年4月",
+    "price": 2799
+  },
+  {
+    "model": "真我 GT5",
+    "processor": "骁龙8 Gen2",
+    "memory": 12,
+    "storage": 256,
+    "battery": 4600,
+    "ttm": "2022年4月",
+    "price": 2999
+  },
+  {
+    "model": "真我 GT5",
+    "processor": "骁龙8 Gen2",
+    "memory": 24,
+    "storage": 1024,
+    "battery": 4600,
+    "ttm": "2022年4月",
+    "price": 3799
+  },
+  {
+    "model": "iQOO 11",
+    "processor": "骁龙8 Gen2",
+    "memory": 8,
+    "storage": 128,
+    "battery": 5000,
+    "ttm": "2022年12月",
+    "price": 3799
+  },
+  {
+    "model": "vivo X90",
+    "processor": "天玑 9200",
+    "memory": 12,
+    "storage": 256,
+    "battery": 4810,
+    "ttm": "2022年12月",
+    "price": 3699
+  },
+  {
+    "model": "一加 Ace2",
+    "processor": "骁龙8 Gen1",
+    "memory": 12,
+    "storage": 256,
+    "battery": 5000,
+    "ttm": "2022年12月",
+    "price": 2699
+  }
+]
