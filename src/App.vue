@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import Fab from './components/Fab.vue';
+import Nav from './components/Nav.vue';
 </script>
 
 <template>
+  <Nav></Nav>
   <router-view></router-view>
 </template>
 

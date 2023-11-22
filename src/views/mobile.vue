@@ -127,7 +127,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <t-base-table :columns="columns" :data="data" rowKey="index">
+  <t-base-table :columns="columns" :data="data" rowKey="index" hover bordered>
     <template #price-performance-ratio="{ col, row }">
       {{ calcPricePerformance(row) }}
     </template>

@@ -1,13 +1,30 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import index from "../views/index.vue";
+import Mobile from "../views/mobile.vue";
+import CPU from "../views/cpu.vue";
+import GPU from "../views/gpu.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
-      component: index,
+      redirect: "/mobile",
+    },
+    {
+      name: "mobile",
+      path: "/mobile",
+      component: Mobile,
+    },
+    {
+      name: "cpu",
+      path: "/cpu",
+      component: CPU,
+    },
+    {
+      name: "gpu",
+      path: "/gpu",
+      component: GPU,
     },
   ],
 });

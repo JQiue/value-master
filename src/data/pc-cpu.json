@@ -1,0 +1,62 @@
+[
+  {
+    "model": "Intel Pentium G2030",
+    "socket": "FCLGA1155",
+    "clockspeed": "3000",
+    "turbospeed": "",
+    "cores": "2",
+    "threads": "2",
+    "tdp": "55",
+    "process": "22",
+    "memory-type": "DDR3",
+    "memory-channels": 2,
+    "graphics": "有",
+    "cache": {
+      "l1": "",
+      "l2": "",
+      "l3": "3MB"
+    },
+    "ttm": "2013/02",
+    "price": 396
+  },
+  {
+    "model": "AMD Ryzen 3 3700x",
+    "socket": "AM4",
+    "clockspeed": "3600",
+    "turbospeed": "4000",
+    "cores": "4",
+    "threads": "4",
+    "tdp": "65",
+    "process": "12",
+    "memory-type": "DDR4",
+    "memory-channels": 2,
+    "graphics": "有",
+    "cache": {
+      "l1": "128KB",
+      "l2": "512KB",
+      "l3": "4MB"
+    },
+    "ttm": "2019/07",
+    "price": 799
+  },
+  {
+    "model": "AMD Ryzen 7 3700x",
+    "socket": "AM4",
+    "clockspeed": "3600",
+    "turbospeed": "4400",
+    "cores": "8",
+    "threads": "16",
+    "tdp": "65",
+    "process": "7",
+    "memory-type": "DDR5",
+    "memory-channels": 2,
+    "graphics": "有",
+    "cache": {
+      "l1": "",
+      "l2": "",
+      "l3": ""
+    },
+    "ttm": "2019/07",
+    "price": 2599
+  }
+]
