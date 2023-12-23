@@ -1,0 +1,104 @@
+[
+  {
+    "model": "Nvidia GeForce GT 620",
+    "cuda": "96",
+    "clockspeed": "700",
+    "turbospeed": "700",
+    "tdp": "49",
+    "process": "40",
+    "memory-size": "1024",
+    "memory-type": "DDR3",
+    "output": {
+      "dvi": true,
+      "hdmi": true,
+      "vga": true
+    },
+    "ttm": "2012/04",
+    "price": 396
+  },
+  {
+    "model": "Nvidia GeForce GTX 1050 Ti",
+    "cuda": "768",
+    "clockspeed": "2205",
+    "turbospeed": "1392",
+    "tdp": "75",
+    "process": "14",
+    "memory-size": "4096",
+    "memory-type": "GDDR5",
+    "output": {
+      "dvi": true,
+      "hdmi": true,
+      "vga": true
+    },
+    "ttm": "2016/10",
+    "price": 1199
+  },
+  {
+    "model": "AMD Radeon RX 580",
+    "cuda": "2304",
+    "clockspeed": "1257",
+    "turbospeed": "1340",
+    "tdp": "185",
+    "process": "14",
+    "memory-size": "8192",
+    "memory-type": "GDDR5",
+    "output": {
+      "dvi": true,
+      "hdmi": true,
+      "vga": true
+    },
+    "ttm": "2017/04",
+    "price": 1899
+  },
+  {
+    "model": "Nvidia GeForce RTX 3060 Ti",
+    "cuda": "4864",
+    "clockspeed": "1410",
+    "turbospeed": "1665",
+    "tdp": "200",
+    "process": "8",
+    "memory-size": "8192",
+    "memory-type": "GDDR6",
+    "output": {
+      "dvi": true,
+      "hdmi": true,
+      "vga": true
+    },
+    "ttm": "2020/12",
+    "price": 2999
+  },
+  {
+    "model": "Nvidia GeForce RTX 4060",
+    "cuda": "3072",
+    "clockspeed": "1830",
+    "turbospeed": "2460",
+    "tdp": "115",
+    "process": "4",
+    "memory-size": "8192",
+    "memory-type": "GDDR6",
+    "output": {
+      "dvi": true,
+      "hdmi": true,
+      "vga": true
+    },
+    "ttm": "2023/6",
+    "price": 2399
+  },
+  {
+    "model": "Nvidia GeForce RTX 4080",
+    "cuda": "9728",
+    "clockspeed": "2205",
+    "turbospeed": "2505",
+    "tdp": "320",
+    "process": "5",
+    "memory-size": "16384",
+    "memory-type": "GDDR6X",
+    "output": {
+      "dvi": true,
+      "hdmi": true,
+      "vga": true
+    },
+    "ttm": "2022/11",
+    "price": 9499
+  }
+]

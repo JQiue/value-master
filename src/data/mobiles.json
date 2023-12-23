@@ -1,5 +1,19 @@
 [
   {
+    "model": "Redmi 9A",
+    "processor": "HelloG25",
+    "memory": 6,
+    "storage": 128,
+    "battery": 5000,
+    "display": {
+      "dpi": 1080,
+      "hz": 144,
+      "technology": "LCD"
+    },
+    "ttm": "2020年8月",
+    "price": 599
+  },
+  {
     "model": "iQOO Neo5 活力版",
     "processor": "骁龙870",
     "memory": 8,

@@ -3,7 +3,7 @@
     <t-head-menu v-model="menuValue" theme="light" @change="changeHandler">
       <t-menu-item value="mobile"> 手机 </t-menu-item>
       <t-menu-item value="cpu"> 台式处理器 </t-menu-item>
-      <t-menu-item value="gpu" disabled> 台式显卡 </t-menu-item>
+      <t-menu-item value="gpu"> 台式显卡 </t-menu-item>
       <template #operations>
         <t-link href="https://github.com/JQiue/value-master" hover="" target="_blank">
           <t-button variant="text" shape="square">

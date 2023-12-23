@@ -1,4 +1,19 @@
 {
+  "骁龙410": {
+    "model": "骁龙410",
+    "ttm": "2014",
+    "performance": 8
+  },
+  "骁龙652": {
+    "model": "骁龙652",
+    "ttm": "2015",
+    "performance": 25
+  },
+  "HelloG25": {
+    "model": "HelloG25",
+    "ttm": "2020",
+    "performance": 28
+  },
   "骁龙870": {
     "model": "骁龙870",
     "ttm": "2021",
