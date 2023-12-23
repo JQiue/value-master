@@ -5,6 +5,7 @@ import storageJSON from '../data/storage.json';
 import memoryJSON from '../data/memory.json';
 import mobilesJSON from '../data/mobiles.json';
 import { Input, Select } from 'tdesign-vue-next';
+import { setMobileData, getMobileData } from '../storage/index';
 
 const weights = {
   processor: 0.30,
@@ -22,8 +23,6 @@ function calcScore(mobile: IMobileInfo): number {
   const battery = getBatteryScore(mobile);
   // 根据权重计算比分
   total = processorScore * weights.processor + memory * weights.memory + storage * weights.storage + battery * weights.battery
-  console.log(processorScore, storage, memory, battery);
-  console.log(total);
   return total;
 }
 
@@ -92,9 +91,27 @@ const selectStorageList = ref(Object.keys(storageJSON));
 const columns = [
   {
     colKey: "model", title: "型号",
+    edit: {
+      component: Input,
+      props: {
+        clearable: true,
+      },
+      on: (editContext: any) => ({
+        onChange: (params: any) => {
+          console.log('status changed', editContext, params);
+        },
+      }),
+      onEdited: (context: { rowIndex: number; newRowData: any; }) => {
+        data.value.splice(context.rowIndex, 1, context.newRowData);
+        setMobileData(data.value.slice(mobilesJSON.length));
+        console.log('Edit Framework:', context);
+      },
+    }
   },
   {
-    colKey: "processor", title: "处理器", edit: {
+    colKey: "processor",
+    title: "处理器",
+    edit: {
       component: Select,
       props: {
         clearable: true,
@@ -112,6 +129,7 @@ const columns = [
       }),
       onEdited: (context: { rowIndex: number; newRowData: any; }) => {
         data.value.splice(context.rowIndex, 1, context.newRowData);
+        setMobileData(data.value.slice(mobilesJSON.length));
         console.log('Edit Framework:', context);
       },
     }
@@ -129,7 +147,9 @@ const columns = [
     colKey: "ttm", title: "上市时间"
   },
   {
-    colKey: "price", title: "上市价格", edit: {
+    colKey: "price",
+    title: "上市价格",
+    edit: {
       component: Input,
       props: {
         clearable: true,
@@ -141,6 +161,7 @@ const columns = [
       }),
       onEdited: (context: { rowIndex: number; newRowData: any; }) => {
         data.value.splice(context.rowIndex, 1, context.newRowData);
+        setMobileData(data.value.slice(mobilesJSON.length));
         console.log('Edit Framework:', context);
       },
     }
@@ -151,26 +172,13 @@ const columns = [
 ];
 
 const data = ref<Array<any>>([]);
+const additionalData = ref<Array<any>>([]);
 
-// function counter(param: {
-//   index: number;
-//   型号: string;
-//   处理器: Cpu;
-//   内存: 4 | 8 | 12;
-//   闪存: 64 | 128 | 256;
-//   电池: 4000 | 4500 | 4600 | 4700 | 5000;
-//   上市时间: string;
-//   上市价格: number;
-// }) {
-//   let cpuP = mobileProcessor[Cpu[param.处理器]].performance;
-//   let ramP = mobileRam[param.内存].performance;
-//   let romP = mobileRom[param.闪存].performance;
-//   let batteryP = mobileBatteryCapacity[param.电池].performance;
-
-//   let ppr = (cpuP + ramP + romP + batteryP) / param.上市价格;
-
-//   return ppr.toFixed(6);
-// }
+function handleAdd() {
+  data.value.push({ ...mobileForm });
+  additionalData.value.push({ ...mobileForm });
+  setMobileData(additionalData.value);
+}
 
 onMounted(() => {
   data.value = mobilesJSON.map((item, index) => {
@@ -178,17 +186,15 @@ onMounted(() => {
       ...item, index
     }
   });
+  const mobileData = getMobileData();
+  if (mobileData) {
+    data.value.concat(mobileData);
+    for (const d of mobileData) {
+      data.value.push(d);
+      additionalData.value.push(d);
+    }
+  }
 })
-
-
-
-function addMobile() {
-  data.value.push({ ...mobileForm });
-}
-
-function handleAdd() {
-  addMobile()
-}
 </script>
 
 <template>
